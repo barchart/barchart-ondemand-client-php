@@ -1,0 +1,41 @@
+{
+    "name": "barchart/ondemand-client",
+    "description": "A client for Barchart OnDemand market data.",
+    "keywords": [
+        "barchart",
+        "ondemand-client",
+        "market-data",
+        "futures",
+        "forex",
+        "stocks",
+        "crypto",
+        "cryptocurrencies"
+    ],
+    "homepage": "https://www.barchart.com/ondemand",
+    "support": {
+        "issues": "https://github.com/barchart/ondemand-client/issues",
+        "source": "https://github.com/barchart/ondemand-client"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Tom Sisk",
+            "email": "tom.sisk@barchart.com",
+            "homepage": "https://www.barchart.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=5.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "Barchart\\": "src/Barchart"
+        }
+    },
+    "suggest": {
+        "ext-curl": "Required to use CURL requests."
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
