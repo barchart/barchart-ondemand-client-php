@@ -30,13 +30,6 @@ class Client
      */
     protected $options;
 
-    /**
-     * List of valid formats.
-     *
-     * @var array
-     */
-    // protected $validFormats = ['csv', 'json', 'jsonp', 'xml'];
-
     public function __construct($apiKey, $options = [])
     {
         $this->apiKey = $apiKey;
