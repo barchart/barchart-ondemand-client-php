@@ -14,7 +14,7 @@ class Client
      *
      * @var string
      */
-    protected $version = '1.0.0';
+    protected $version = '1.0.1';
 
     /**
      * API key to make requests with.
@@ -89,7 +89,7 @@ class Client
         curl_setopt($ch, CURLOPT_URL, $url);
         curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
         curl_setopt($ch, CURLOPT_NOSIGNAL, true);
-        curl_setopt($ch, CURLOPT_USERAGENT, 'barchart-ondemand-client-php/'.$version);
+        curl_setopt($ch, CURLOPT_USERAGENT, 'barchart-ondemand-client-php/'.$this->version);
 
         $output = curl_exec($ch);
 
