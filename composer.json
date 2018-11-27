@@ -14,7 +14,7 @@
     "homepage": "https://www.barchart.com/ondemand",
     "support": {
         "issues": "https://github.com/barchart/barchart-ondemand-client-php/issues",
-        "source": "https://github.com/barchart/barchart-ondemand-client-php/ondemand-client"
+        "source": "https://github.com/barchart/barchart-ondemand-client-php"
     },
     "license": "MIT",
     "authors": [
