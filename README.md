@@ -20,7 +20,7 @@ $results = $ondemand->makeRequest('getQuote', ['symbols' => 'AAPL,AMZN']);
 ```
 
 #### Free API
-If you're using Barchart's free OnDemand API's, you need to overwrite the host on intialization:
+If you're using Barchart's free OnDemand API's, you need to overwrite the host on initialization:
 ```php
 $ondemand = new Client('YOUR API KEY', ['host' => 'marketdata.websol.barchart.com']);
 ```
