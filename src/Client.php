@@ -14,7 +14,7 @@ class Client
      *
      * @var string
      */
-    protected $version = '1.1.1';
+    protected $version = '1.1.2';
 
     /**
      * API key to make requests with.
