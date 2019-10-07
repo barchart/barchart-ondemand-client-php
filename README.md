@@ -10,6 +10,8 @@ composer require barchart/ondemand-client
 
 ### Usage
 ```php
+require_once 'vendor/autoload.php';
+
 use Barchart\OnDemand\Client;
 
 $ondemand = new Client('YOUR API KEY');
