@@ -14,7 +14,7 @@ class Client
      *
      * @var string
      */
-    protected $version = '1.1.2';
+    protected $version = '1.2.0';
 
     /**
      * API key to make requests with.
@@ -47,7 +47,10 @@ class Client
      */
     public function makeRequest($endpoint, $parameters)
     {
-        $parameters['apikey'] = $this->apiKey;
+        if (! isset($parameters['apikey'])) {
+            $parameters['apikey'] = $this->apiKey;
+        }
+
         $url = $this->getUrl($endpoint, $parameters);
 
         return $this->retrieveData($url);
